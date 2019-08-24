@@ -1,0 +1,303 @@
+
+/* 
+    Code developed by: DAMAI                               
+    Developers: - Sofia Verónica Ro                           
+                - Osain Abitia Alvarez                        
+                - Alejandro Vázquez del Mercado Gutiérrez  
+*/
+
+/*      GENERAL STYLE - LANDING PAGE     */
+/*                                           */
+/*      CONTENET:                           */
+/*                                           */
+/*      - general style                      */
+/*      - header                             */
+/*      - damai                              */
+/*      - problematic (.fair)               */
+/*      - services                          */
+/*      - licensing                          */
+/*      - footer                             */
+
+
+
+/*        
+            GENERAL STYLE 
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+hr {
+    width: 5vw;
+    border: 1px solid white;
+}
+
+.row {
+    display: flex;
+    width: 80vw;
+    margin-left: 13vw;
+    margin-top: 10vh;
+}
+
+/* Card base for licensing and services. */
+.card {
+    display: block;
+    width: 28%;
+    margin-right: 3%;
+    height: 60vh;
+    border-right: 1px solid rgb(121, 121, 121);
+}
+
+/* 
+            HEADER (LANDING ENTRANCE)
+*/
+
+#header {
+    min-height: 100vh;
+    background: url('../img/bg-header.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+#header #info {
+    padding-top: 20vh;
+    margin-left: 10vw;
+    width: 30vw;
+}
+
+#header #info h1 {
+    font-size: 3em;
+    font-weight: 200;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+
+#header #info p {
+    margin-top: 2vh;
+    font-weight: 200;
+    color: #ffffff;
+    line-height: 1.2em;
+}
+
+
+
+
+
+/* 
+            DAMAI's INFORMATION
+*/
+
+#damai #what-is {
+    position: absolute;
+    width: 50vw;
+    height: 250vh;
+    /* background: #aaaaaa; */
+    background: linear-gradient(#cccfd6, #fcfcfc);
+    z-index: 1000;
+    transform: skewX(165deg);
+    margin-left: -35vw;
+}
+
+#damai #what-is #content {
+    z-index: 2000;
+}
+
+
+
+#damai #what-is-img img {
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+}
+
+#damai #second-what-is {
+    height: 180vh;
+    z-index: 10;
+}
+
+
+#damai #fair {
+    height: 80vh;
+    z-index: 100;
+    background: #ffffff;
+}
+
+
+#fair h4 {
+    margin-left: 25vw;
+    margin-top: 30vh;
+    margin-bottom: -5px;
+    font-family: 'Raleway';
+    font-size: 3.5em;
+    font-weight: 100;
+    color: #777777;
+    line-height: 1em;
+}
+
+
+#fair #texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgb(8, 44, 172), rgb(1, 132, 195));
+    color: #ffffff;
+    font-weight: 300;
+    line-height: 1.5em;
+    /* margin-top: 30vh; */
+    height: 40vh;
+}
+
+
+#fair p {
+    margin-left: 25vw;
+    margin-right: 10vw;
+}
+
+
+
+
+
+/* 
+            SERVICES
+*/
+
+#services {
+    height: 100vh;
+    background: linear-gradient(#ffffff, #e0e0e0);
+}
+
+
+#services .last {
+    border: none;
+}
+
+#services .middle {
+    margin-bottom: 10%;
+}
+
+
+.card img {
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 25%;
+}
+
+
+.card p {
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 200;
+    margin: 10% 10%;
+}
+
+
+.card .button {
+    width: 30% !important;
+    margin-left: 18%;
+    margin-top: 20%;
+}
+
+
+#title {
+    margin-top: 10vh;
+    margin-left: 10vw;
+}
+
+
+#title h3 {
+    font-size: 1.4em;
+    font-weight: 100;
+    color: #303030;
+    margin-bottom: .5em;
+}
+
+
+#title hr {
+    border: 1px solid rgb(8, 44, 172);
+}
+
+
+
+
+
+/* 
+            STATISTICS
+*/
+
+#statistics {
+    background: linear-gradient(rgb(8, 44, 172), rgb(1, 132, 195));
+    height: 50vh;
+}
+
+
+#statistics .content {
+    padding: 3em;
+}
+
+#statistics .title {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 100;
+    color: #f1f1f1;
+}
+
+
+
+/* 
+            LICENSING
+*/
+
+#licensing {
+    height: 100vh;
+}
+
+
+#licensing .card {
+    /* border: 1px solid rgb(121, 121, 121); */
+    border: none !important;
+    border-radius: 10px;
+    box-shadow: 0px 0px 36px -19px rgba(0,0,0,0.75);
+}
+
+.card .description {
+    font-weight: 300;
+    margin: 10% 10%;
+    text-align: center;
+}
+
+.card .price {
+    color: #1a8659;
+    font-size: .8em;
+}
+
+
+
+
+
+/* 
+            SPONSORS
+*/
+
+#sponsors {
+    background: linear-gradient(rgb(8, 44, 172), rgb(1, 132, 195));
+    height: 50vh;
+}
+
+
+
+
+
+/* 
+            FOOTER 
+*/
+
+#footer {
+    min-height: 50vh;
+    background: #252525;
+}
