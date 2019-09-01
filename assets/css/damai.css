@@ -52,6 +52,12 @@ body {
     text-align: center;
 }
 
+@media only screen and (max-width: 544px) {
+    .button {
+        width: 50%;
+    }
+}
+
 /* Primary Button */
 
 .primary-button {

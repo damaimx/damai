@@ -6,17 +6,19 @@
                 - Alejandro Vázquez del Mercado Gutiérrez  
 */
 
-/*      GENERAL STYLE - LANDING PAGE     */
+/*      GENERAL STYLE - LANDING PAGE         */
 /*                                           */
-/*      CONTENET:                           */
+/*      CONTENT:                             */
 /*                                           */
 /*      - general style                      */
 /*      - header                             */
 /*      - damai                              */
-/*      - problematic (.fair)               */
-/*      - services                          */
+/*      - is it even fair                    */
+/*      - problematic (.fair)                */
+/*      - services                           */
 /*      - licensing                          */
 /*      - footer                             */
+/*      -  mobile specifications             */
 
 
 
@@ -25,279 +27,311 @@
 */
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: Helvetica, sans-serif;
+	margin: 0;
+	padding: 0; 
 }
 
-hr {
-    width: 5vw;
-    border: 1px solid white;
+
+.button {
+
 }
 
-.row {
-    display: flex;
-    width: 80vw;
-    margin-left: 13vw;
-    margin-top: 10vh;
-}
 
-/* Card base for licensing and services. */
-.card {
-    display: block;
-    width: 28%;
-    margin-right: 3%;
-    height: 60vh;
-    border-right: 1px solid rgb(121, 121, 121);
-}
 
 /* 
             HEADER (LANDING ENTRANCE)
 */
 
+
 #header {
-    min-height: 100vh;
-    background: url('../img/bg-header.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+	display: block;
+	height: 100vh;
+	background: url('../img/bg-header.png');
+	color: #fff;
 }
 
-
-#header #info {
-    padding-top: 20vh;
-    margin-left: 10vw;
-    width: 30vw;
+#header .content {
+	width: 40vw;
+	padding: 10% 0% 0% 10%;	
 }
 
-#header #info h1 {
-    font-size: 3em;
-    font-weight: 200;
-    color: #ffffff;
-    margin-bottom: 10px;
+#header .content h1 {
+	font-size: 2rem;
 }
 
-
-#header #info p {
-    margin-top: 2vh;
-    font-weight: 200;
-    color: #ffffff;
-    line-height: 1.2em;
+#header .content hr {
+	width: 5vw;
+    border: 1px solid white;
 }
-
 
 
 
 
 /* 
-            DAMAI's INFORMATION
+            INFO DAMAI
 */
 
-#damai #what-is {
-    position: absolute;
-    width: 50vw;
-    height: 250vh;
-    /* background: #aaaaaa; */
-    background: linear-gradient(#cccfd6, #fcfcfc);
-    z-index: 1000;
-    transform: skewX(165deg);
-    margin-left: -35vw;
+#damai--info {
+	height: 100vh;
+	background: url('../img/bg-damai.png');
+	background-position: center;
+	background-size: cover;
 }
-
-#damai #what-is #content {
-    z-index: 2000;
-}
-
-
-
-#damai #what-is-img img {
-    height: 100vh;
-    width: 100vw;
-    z-index: 10;
-}
-
-#damai #second-what-is {
-    height: 180vh;
-    z-index: 10;
-}
-
-
-#damai #fair {
-    height: 80vh;
-    z-index: 100;
-    background: #ffffff;
-}
-
-
-#fair h4 {
-    margin-left: 25vw;
-    margin-top: 30vh;
-    margin-bottom: -5px;
-    font-family: 'Raleway';
-    font-size: 3.5em;
-    font-weight: 100;
-    color: #777777;
-    line-height: 1em;
-}
-
-
-#fair #texto {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(rgb(8, 44, 172), rgb(1, 132, 195));
-    color: #ffffff;
-    font-weight: 300;
-    line-height: 1.5em;
-    /* margin-top: 30vh; */
-    height: 40vh;
-}
-
-
-#fair p {
-    margin-left: 25vw;
-    margin-right: 10vw;
-}
-
 
 
 
 
 /* 
-            SERVICES
+            IS IT EVEN FAIR
+*/
+
+#fair {
+	display: block;
+}
+
+#fair .title {
+	margin: 15vh 0 0 15vw !important;
+	font-size: 6em;
+	font-weight: lighter;
+	text-transform: uppercase;
+	color: #cccccc;
+	margin-bottom: -5px;
+	font-family: 'Raleway';
+}
+
+
+#fair .content {
+	height: 40vh;
+	background: linear-gradient(rgb(8, 44, 172), rgb(1, 132, 195));
+	padding: 5vh 15vw;
+	color: #f1f1f1;
+	display: flex;
+	align-items: center;
+	margin-top: -2%;
+	margin-bottom: 15vh;
+}
+
+
+
+/* 
+            Services
 */
 
 #services {
-    height: 100vh;
-    background: linear-gradient(#ffffff, #e0e0e0);
+	height: 100vh;
+	background: linear-gradient(#ffffff, #e0e0e0);
+	padding: 10vh 10vw;
 }
 
-
-#services .last {
-    border: none;
+#services > .title, #licensing > .title {
+	font-size: 1.5em;
 }
 
-#services .middle {
-    padding-top: 3%;
+#services hr, #licensing hr {
+	width: 5vw;
+	border: 1px solid rgb(8, 44, 172);
 }
 
-
-.card img {
-    width: 30%;
-    margin-left: 35%;
-    margin-top: 25%;
+#services .row {
+	margin-top: 15vh;
 }
 
-
-.card p {
-    text-align: center;
-    font-size: 1.8em;
-    font-weight: 200;
-    margin: 10% 10%;
+#services .border--right {
+	border-right: 1px solid #494949;
 }
 
-
-.card .button {
-    width: 30% !important;
-    margin-left: 18%;
-    margin-top: 20%;
+#services .card--title {
+	padding: 15px 0;
+	font-size: 1.8em;
+	margin: 10%;
 }
 
-
-#title {
-    margin-top: 10vh;
-    margin-left: 10vw;
+.service--card img {
+	width: 30%;
+	margin-left: 35%;
 }
 
-
-#title h3 {
-    font-size: 1.4em;
-    font-weight: 100;
-    color: #303030;
-    margin-bottom: .5em;
+#services .middle--card .card--title {
+	padding-bottom: 2em;
 }
 
-
-#title hr {
-    border: 1px solid rgb(8, 44, 172);
+#services .middle--card img {
+	padding-bottom: 1.2em;
 }
 
+#services .button {
+	width: 70%;
+	margin-left: 15%;
+}
 
 
 
 
 /* 
-            STATISTICS
+            Statistics 
 */
 
-#statistics {
-    background: linear-gradient(rgb(8, 44, 172), rgb(1, 132, 195));
-    height: 50vh;
+#numbers {
+	height: 60vh;
+	background: linear-gradient(rgb(8, 44, 172), rgb(1, 132, 195));
 }
 
-
-#statistics .content {
-    padding: 3em;
+#numbers .title {
+	text-align: center;
+	font-size: 2em;
+	color: #f1f1f1;
+	padding-top: 5vh;
 }
 
-#statistics .title {
-    text-align: center;
-    font-size: 2em;
-    font-weight: 100;
-    color: #f1f1f1;
-}
 
 
 
 /* 
-            LICENSING
+            Licensing
 */
 
 #licensing {
-    height: 100vh;
+	height: 100vh;
+	background: linear-gradient(#ffffff, #e0e0e0);
+	padding: 10vh 10vw;
 }
 
-
-#licensing .card {
-    /* border: 1px solid rgb(121, 121, 121); */
-    border: none !important;
-    border-radius: 10px;
-    box-shadow: 0px 0px 36px -19px rgba(0,0,0,0.75);
+#licensing .row {
+	margin-top: 5%;
+	margin-left: 5%;
 }
 
-.card .description {
-    font-weight: 300;
-    margin: 10% 10%;
-    text-align: center;
+#licensing .col-lg-3 {
+	margin: 3%;
 }
 
-.card .price {
-    color: #1a8659;
-    font-size: .8em;
+.license--card {
+	text-align: center;
+	background: #fff;
+	border-radius: 20px;
+	box-shadow: 0px 0px 36px -19px rgba(0,0,0,0.75);
 }
 
+.license--card img {
+	width: 30%;
+	padding-top: 20%; 
+}
+
+.license--card .title {
+	font-size: 2em;
+	padding-top: 10%;
+}
+
+.license--card .description {
+	font-size: .8em;
+	margin: 10%;
+}
+
+.license--card .price {
+	color: #019155;
+	margin-bottom: 10%;
+}
 
 
 
 
 /* 
-            SPONSORS
-*/
-
-#sponsors {
-    background: linear-gradient(rgb(8, 44, 172), rgb(1, 132, 195));
-    height: 50vh;
-}
-
-
-
-
-
-/* 
-            FOOTER 
+            Footer
 */
 
 #footer {
-    min-height: 50vh;
-    background: #252525;
+	height: 40vh;
+	background: #444444;
+}
+
+#footer .damai--logo {
+	margin: 20% 35%;
+	width: 30%;
+}
+
+
+
+
+
+
+/* 
+            Mobile Specifications 
+*/
+
+/* Cellphones */
+@media only screen and (max-width: 544px) {
+	
+	/* 		Header		 */
+	#header .content {
+		width: 80vw;
+		padding: 30% 10%;
+	}
+
+	#header .content hr {
+		width: 15vw;
+		border: 1px solid white;
+	}
+
+
+	/* 		DAMAI		 */
+	#damai--info {
+		height: 100vh;
+		background: url('../img/bg-damai--mobile.png');
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+
+
+	/* 		IS IT EVEN FAIR		 */
+	#fair .title {
+		margin: 10vh 0 0 5vw !important;
+		font-size: 4em;
+		text-transform: uppercase;
+		color: #a1a1a1;
+		font-family: 'Raleway';
+	}
+	
+	
+	#fair .content {
+		height: 60vh;
+		font-size: 1.2em;
+		text-align: center;
+		background: linear-gradient(rgb(8, 44, 172), rgb(1, 132, 195));
+		padding: 5vh 5vw;
+		color: #f1f1f1;
+		display: flex;
+		align-items: center;
+		margin-top: -5%;
+	}
+
+
+
+	/* 		Services		 */
+	#services {
+		height: fit-content;
+		padding: 0 5%;
+	}
+
+	#services .service--card {
+		margin-bottom: 15vh;
+	}
+
+	#services .border--right {
+		border: none;
+	}
+
+
+	/* 		Licensing		 */
+
+	#licensing {
+		height: fit-content;
+	}
+
+	#licensing .row {
+		margin: 0;
+		padding-top: 15%;
+	}
+
 }
