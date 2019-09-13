@@ -185,6 +185,29 @@
 }
 
 
+#numbers > .content {
+	display: flex;
+	align-items: center;
+}
+
+#numbers .row {
+	padding: 5% 10% !important;
+}
+
+
+
+.number--fact {
+	color: #f1f1f1;
+	font-size: 1.4em;
+	text-align: center;
+}
+
+.number--fact > .data {
+	font-size: 2em;
+	font-style: normal;
+}
+
+
 
 
 /* 
@@ -233,6 +256,23 @@
 	margin-bottom: 10%;
 }
 
+
+
+/* 
+            Sponsors
+*/
+
+#sponsors {
+	height: 60vh;
+	background: linear-gradient(rgb(8, 44, 172), rgb(1, 132, 195));
+}
+
+#sponsors .title {
+	font-size: 2em;
+	color: #f1f1f1;
+	text-align: center;
+	padding-top: 5%;
+}
 
 
 
@@ -328,11 +368,17 @@
 	/* 		Numbers			 */
 
 	#numbers {
-		min-height: 100vh;
+		height: fit-content;
 	}
 
 	#numbers .title {
 		margin: 0 10% 5% 10%;
+	}
+
+	.number--fact {
+		color: #f1f1f1;
+		font-size: 1.5em;
+		margin: 10%;
 	}
 
 
