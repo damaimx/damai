@@ -234,6 +234,11 @@
 	background: #fff;
 	border-radius: 20px;
 	box-shadow: 0px 0px 36px -19px rgba(0,0,0,0.75);
+	transition: all .2s ease-in-out
+}
+.license--card:hover {
+	box-shadow: 0px 0px 36px -19px rgb(0, 0, 0);
+	transform: scale(1.1)
 }
 
 .license--card img {
